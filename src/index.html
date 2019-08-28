@@ -1,0 +1,191 @@
+<!-- Work Hours Report Boston Academy -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/WorkHoursReport.css">
+    <title>Work Hours Report</title>
+</head>
+<body>
+    <header class = "header">
+
+        <h2 class="report__title">Boston Work Hours Report</h2>
+
+        <!-- Input personal details and period -->
+
+        <div class ="maestro" id ="teacher">
+            <form>
+                First Name:
+                <input type = "text" name = "firstname">
+                Last Name:
+                <input type = "text" name = "lastname">
+                From:
+                <input type = date name = "from">
+                To:
+                <input type = date name = "to">
+            </form>
+        </div>
+    </header>
+
+
+    <!-- Report showing hours etc -->
+
+    <div class="report__body">
+        <div class="courses__rpt">
+                <table class = "lists">
+                        <tr>                    
+                            <th>Level</th>
+                            <th>Schedule</th>
+                            <th>Hours</th>
+                        </tr>
+                    </table>
+            <div class="courses__list">
+            </div>
+        </div>
+        <div class="companies__rpt">
+                <table class = "lists">
+                        <tr>
+                            <th>Company</th>
+                            <th>Level</th>
+                            <th>Frequency</th>
+                            <th>Hours</th>
+                        </tr>
+                    </table>
+            <div class="companies__list">
+            </div>
+        </div>
+        <div class="subs__rpt">
+                <table class = "lists">
+                        <tr>
+                            <th>Date</th>
+                            <th>Level</th>
+                            <th>Schedule</th>
+                            <th>Course Teacher</th>
+                            <th>Hours</th>
+                        </tr>
+                    </table>
+            <div class="subs__list">
+            </div>
+        </div>
+        <div class="absences__rpt">
+            <table class = "lists">
+                <tr>
+                    <th>Date</th>
+                    <th>Level</th>
+                    <th>Schedule</th>
+                    <th>Sub Teacher</th>
+                    <th>Hours</th>
+                </tr>
+            </table>
+            <div class="absences__list">
+            </div>
+        </div>
+    </div>
+
+    <!-- Choose schedule and type of course -->
+
+    <div id = "input">
+
+        <div id="timeSlot">
+            <select name ="sch" class="timeSlot">
+                <option value = "begin">Time slot</option>
+                <option value = "7am to 8.30am">7am to 8.30am</option>
+                <option value = "8.30am to 10am">8.30am to 10am</option>
+                <option value = "Companies">Companies</option>
+                <option value = "Kids and Teens">Kids and Teens</option>
+                <option value = "6pm to 7.30pm">6pm to 7.30pm</option>
+                <option value = "6pm to 7.30pm">7.30pm to 9pm</option>
+                <option value = "8am to 1pm">Saturday</option>
+                <option value = "Chat">Chat</option>
+                <option value = "Substitutions">Substitutions</option>
+                <option value = "Absences">Absences</option>
+            </select>
+        </div>
+
+    <!-- Adults courses -->
+
+        <div id="adults" style="display:block">
+            <select class="adults">
+                <option value = "Lvl">Level</option>
+                <option value = "STA A">Starter A</option>
+                <option value = "STA B">Starter B</option>
+                <option value = "STA C">Starter C</option>
+                <option value = "ELE A">Elementary A</option>
+                <option value = "ELE B">Elementary B</option>
+                <option value = "ELE B">Elementary C</option>
+                <option value = "PRE A">Pre A</option>
+                <option value = "PRE B">Pre B</option> 
+                <option value = "PRE C">Pre C</option>
+                <option value = "INT A">Int A</option>
+                <option value = "INT B">Int B</option>
+                <option value = "INT C">Int C</option>
+                <option value = "UPP A">Upp A</option>
+                <option value = "UPP B">Upp B</option>
+                <option value = "UPP C">Upp C</option>
+                <option value = "ADV A">Adv A</option>
+                <option value = "ADV B">Adv B</option>
+                <option value = "ADV C">Adv C</option>
+                <option value = "BUSUPP1">Business Upp 1</option>
+                <option value = "BUSUPP2">Business Upp 2</option>
+                <option value = "BUSUPP3">Business Upp 3</option>
+                <option value = "BUSUPP4">Business Upp 4</option>
+                <option value = "BUSADV1">Business Adv 1</option>
+                <option value = "BUSADV2">Business Adv 2</option>
+                <option value = "BUSADV3">Business Adv 3</option>
+                <option value = "BUSADV4">Business Adv 4</option> 
+                <option value = "TOEFL 1">TOEFL 1</option>
+                <option value = "TOEFL 2">TOEFL 2</option>
+                <option value = "TOEFL 3">TOEFL 3</option>
+                <option value = "TOEFL 4">TOEFL 4</option>
+            </select>
+        </div>
+
+    <!-- Company name text box -->
+        <div id="co" style="display:none">
+            <input type="text" id="company" placeholder="Company">
+            <input type="text" id="frequency" placeholder="Frequency">
+        </div>
+
+
+    <!-- Date box (subs and absences) -->
+        <div class="subabs" id="subabs" style="display:none">
+            <input type= date id="date" placeholder="Date">
+            <input type="text" id="teacher" placeholder="Teacher">
+        </div>
+
+
+    <!-- Kids and Teens all courses -->
+        <div id="kidsTeens" style="display:none">
+            <select class="kidsTeens">
+                <option value = 31>Kids A</option>
+                <option value = 32>Kids B</option>
+                <option value = 33>Kids C</option>
+            </select>
+        </div>
+         
+
+
+    <!-- Chat schedule -->
+        <div id="chat" style="display:none">
+            <select class="chat">
+                <option value = "8.30am">8.30am</option>
+                <option value = "10am">10am</option>
+                <option value = "4pm Kids and Teens">4pm Kids and Teens</option>
+                <option value = "6pm">6pm</option>
+                <option value = "7.30pm">7.30pm</option>
+                <option value = "1pm Saturday"> 1pm Saturday</option>
+            </select>
+        </div>
+       
+
+    <!-- Input number of hours and add button -->
+
+        <input type ="number" class="hours" placeholder ="Hours">
+        <button class="addBtn">+</button>             
+    </div>     
+</body>
+
+</html>
