@@ -1,0 +1,36 @@
+{
+  "name": "workhours",
+  "version": "1.0.0",
+  "description": "workhours project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
+    "test": "jest",
+    "compile:sass": "node-sass sass/main.scss src/style.css"
+  },
+  "author": "Gethin Thomas",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Gethric/Work-Hours-Report.git"
+  }
+}

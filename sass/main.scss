@@ -1,0 +1,68 @@
+$boston-green: #006D76;
+$boston-white: #FFFFFF;
+$boston-black: black;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 30px;
+    background-color: #006D76;
+}
+
+.report__title {
+    display: flex;
+    justify-content: center;
+}
+
+.datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($boston-green, 0.8),
+        rgba($boston-white, 0.8));
+    background-size: cover;
+    background-position: top;
+}
+
+.report__body {
+    background-color: orangered;   
+}
+
+.lists {
+    width: 100%
+}
+
+.lists thead tr {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: aquamarine;
+    text-align: left;
+}
+
+.item {
+    width: 100%
+}
+
+.item tr {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: white;
+    text-align: left;
+}

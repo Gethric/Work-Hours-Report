@@ -6,18 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/WorkHoursReport.css">
+    
     <title>Work Hours Report</title>
 </head>
 <body>
-    <header class = "header">
+    <div class = "header">
 
         <h2 class="report__title">Boston Work Hours Report</h2>
 
         <!-- Input personal details and period -->
 
         <div class ="maestro" id ="teacher">
-            <form>
+            <form class = "datos">
                 First Name:
                 <input type = "text" name = "firstname">
                 Last Name:
@@ -28,57 +28,66 @@
                 <input type = date name = "to">
             </form>
         </div>
-    </header>
+    </div>
 
 
     <!-- Report showing hours etc -->
 
     <div class="report__body">
         <div class="courses__rpt">
-                <table class = "lists">
-                        <tr>                    
-                            <th>Level</th>
-                            <th>Schedule</th>
-                            <th>Hours</th>
-                        </tr>
-                    </table>
+            <table class = "lists">
+                <thead>
+                    <tr>                    
+                        <th>Schedule</th>
+                        <th>Level</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+            </table>
             <div class="courses__list">
             </div>
         </div>
         <div class="companies__rpt">
-                <table class = "lists">
-                        <tr>
-                            <th>Company</th>
-                            <th>Level</th>
-                            <th>Frequency</th>
-                            <th>Hours</th>
-                        </tr>
-                    </table>
+            <table class = "lists">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Level</th>
+                        <th>Frequency</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+            </table>
             <div class="companies__list">
             </div>
         </div>
         <div class="subs__rpt">
-                <table class = "lists">
-                        <tr>
-                            <th>Date</th>
-                            <th>Level</th>
-                            <th>Schedule</th>
-                            <th>Course Teacher</th>
-                            <th>Hours</th>
-                        </tr>
-                    </table>
+            <table class = "lists">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Level</th>
+                        <th>Schedule</th>
+                        <th>Course Teacher</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+            </table>
             <div class="subs__list">
             </div>
         </div>
         <div class="absences__rpt">
             <table class = "lists">
-                <tr>
-                    <th>Date</th>
-                    <th>Level</th>
-                    <th>Schedule</th>
-                    <th>Sub Teacher</th>
-                    <th>Hours</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Level</th>
+                        <th>Schedule</th>
+                        <th>Sub Teacher</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+             
             </table>
             <div class="absences__list">
             </div>
@@ -151,9 +160,18 @@
 
 
     <!-- Date box (subs and absences) -->
-        <div class="subabs" id="subabs" style="display:none">
-            <input type= date id="date" placeholder="Date">
-            <input type="text" id="teacher" placeholder="Teacher">
+        <div class="subabs" id = "subabs" style="display:none">
+            <input type= date id = "date" placeholder="Date">
+            <input type="text" class = "teacher" placeholder="Teacher">
+            <select name = "subabt" class = "subabtime">
+                <option value = "7am to 8.30am">7am to 8.30am</option>
+                <option value = "8.30am to 10am">8.30am to 10am</option>
+                <option value = "Companies">Companies</option>
+                <option value = "Kids and Teens">Kids and Teens</option>
+                <option value = "6pm to 7.30pm">6pm to 7.30pm</option>
+                <option value = "6pm to 7.30pm">7.30pm to 9pm</option>
+                <option value = "8am to 1pm">Saturday</option>
+            </select>
         </div>
 
 
