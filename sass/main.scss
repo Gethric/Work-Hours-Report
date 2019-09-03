@@ -42,7 +42,7 @@ body {
 }
 
 .report__body {
-    background-color: orangered;   
+    background-color: $boston-white;   
 }
 
 .lists {
@@ -52,7 +52,7 @@ body {
 .lists thead tr {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: aquamarine;
+    background-color: $boston-green;
     text-align: left;
 }
 
@@ -63,6 +63,19 @@ body {
 .item tr {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: white;
+    background-color: $boston-white;
     text-align: left;
+}
+
+#input {
+    padding: 50px;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($boston-green, 0.8),
+        rgba($boston-white, 0.8));
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }

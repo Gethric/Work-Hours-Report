@@ -15,7 +15,7 @@ export const addListItem = (obj) => {
 
         element = DOMstrings.absencesContainer;
 
-        html = `<div class="item" id="sub-%id%">
+        html = `<table class="item" id="sub-%id%">
                     <tr>
                         <td>%date%</td>
                         <td>%level%</td>
@@ -27,13 +27,13 @@ export const addListItem = (obj) => {
                             </button>
                         </div>
                     </tr>
-                </div>`;
+                </table>`;
         
     } else if (input.getTimeSlot === 'Companies') {
 
         element = DOMstrings.companiesContainer;
 
-        html = `<div class="item" id="cmp-%id%">
+        html = `<table class="item" id="cmp-%id%">
                     <td>%company%</td>
                     <td>%level%</td>
                     <td>%frequency%</td>
@@ -42,31 +42,31 @@ export const addListItem = (obj) => {
                         <button class="item__delete--btn">
                         </button>
                     </div>
-                </div>`;
+                </table>`;
 
     } else if (input.getTimeSlot === 'Substitutions') {
 
         element = DOMstrings.subsContainer;
 
-        html = `<div class="item" id="sub-%id%">
+        html = `<table class="item" id="sub-%id%">
                     <td>%date%</td>
                     <td>%level%</td>
                     <td>%subabtime%</td>
                     <td>%teacher%</td>
                     <td>%hours%</td>
-                </div>`;
+                </table>`;
 
     } else {
 
         element = DOMstrings.coursesContainer;
 
-        html = `<div class = "item" id="crs-%id%">
+        html = `<table class = "item" id="crs-%id%">
                     <tr>
                         <td>%schedule%</td>
                         <td>%level%</td>
                         <td>%hours%</td>
                     </tr>
-                </div>`;
+                </table>`;
 
        }
 
