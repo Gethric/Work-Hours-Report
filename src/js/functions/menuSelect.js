@@ -8,7 +8,7 @@ export const menuSelect = () => {
 
     if (menu === 'Chat') {
         chatMenu();
-    } else if (menu === 'Kids and Teens') {
+    } else if (menu === 'Kids') {
         kidsTeensMenu();
     } else if (menu === 'Companies') {
         companiesMenu();

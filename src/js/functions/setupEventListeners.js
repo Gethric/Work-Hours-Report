@@ -2,6 +2,7 @@
 import { menuSelect } from './menuSelect';
 import { ctrlAddItem } from './ctrlAddItem';
 import { DOMstrings } from '../objects/DOMstrings';
+import { ctrlDeleteItem } from './ctrlDeleteItem';
 
 export const setupEventListeners = () => {
 
@@ -20,4 +21,8 @@ export const setupEventListeners = () => {
             ctrlAddItem();
         }
     });
+
+    // Function called on clicking delete button
+
+    document.querySelector(DOM.itemContainer).addEventListener('click', ctrlDeleteItem);
 };

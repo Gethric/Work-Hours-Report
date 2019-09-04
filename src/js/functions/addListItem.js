@@ -15,58 +15,62 @@ export const addListItem = (obj) => {
 
         element = DOMstrings.absencesContainer;
 
-        html = `<table class="item" id="sub-%id%">
-                    <tr>
-                        <td>%date%</td>
-                        <td>%level%</td>
-                        <td>%subabtime%</td>
-                        <td>%teacher%</td>
-                        <td>%hours%</td>
-                        <div class="item__delete">
-                            <button class="item__delete--btn">
-                            </button>
-                        </div>
-                    </tr>
-                </table>`;
+        html = `<div id="sub-%id%">
+                    <table class="item">
+                        <tr>
+                            <td>%date%</td>
+                            <td>%level%</td>
+                            <td>%subabtime%</td>
+                            <td>%teacher%</td>
+                            <td>%hours%</td>
+                        </tr>
+                    </table>
+                    <button type = "button" class = "delete-btn" id="sub-%id%">DELETE</button>
+                </div>`;
         
     } else if (input.getTimeSlot === 'Companies') {
 
         element = DOMstrings.companiesContainer;
 
-        html = `<table class="item" id="cmp-%id%">
-                    <td>%company%</td>
-                    <td>%level%</td>
-                    <td>%frequency%</td>
-                    <td>%hours%</td>
-                    <div class="item__delete">
-                        <button class="item__delete--btn">
-                        </button>
-                    </div>
-                </table>`;
+        html = `<div id="cmp-%id%">
+                    <table class="item">
+                        <td>%company%</td>
+                        <td>%level%</td>
+                        <td>%frequency%</td>
+                        <td>%hours%</td>
+                    </table>
+                    <button type = "button" class = "delete-btn" id="cmp-%id%">DELETE</button>
+                </div>`;
 
     } else if (input.getTimeSlot === 'Substitutions') {
 
         element = DOMstrings.subsContainer;
 
-        html = `<table class="item" id="sub-%id%">
-                    <td>%date%</td>
-                    <td>%level%</td>
-                    <td>%subabtime%</td>
-                    <td>%teacher%</td>
-                    <td>%hours%</td>
-                </table>`;
+        html = `<div id="sub-%id%">
+                    <table class="item">
+                        <td>%date%</td>
+                        <td>%level%</td>
+                        <td>%subabtime%</td>
+                        <td>%teacher%</td>
+                        <td>%hours%</td>
+                    </table>
+                    <button type = "button" class = "delete-btn" id = "sub-%id%">DELETE</button>
+                </div>`;
 
     } else {
 
         element = DOMstrings.coursesContainer;
 
-        html = `<table class = "item" id="crs-%id%">
-                    <tr>
-                        <td>%schedule%</td>
-                        <td>%level%</td>
-                        <td>%hours%</td>
-                    </tr>
-                </table>`;
+        html = `<div id="crs-%id%">
+                    <table class = "item">
+                        <tr>
+                            <td>%schedule%</td>
+                            <td>%level%</td>
+                            <td>%hours%</td>
+                        </tr>
+                    </table>
+                    <button type = "button" class = "delete-btn">DELETE</button>
+                </div>`;
 
        }
 
