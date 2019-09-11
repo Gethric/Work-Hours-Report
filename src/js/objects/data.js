@@ -1,22 +1,20 @@
 
 export let data = {
     allHours: {
-        crs: [],
         Courses: [],
-        Companies: [],
+        Chat: [],
         Kids: [],
         Substitutions: [],
-        Absences: [],
-        Chat: [],
-        
+        Companies: [],
+        Absences: []
     },
     totals: {
         Courses: 0,
-        Companies: 0,
+        Chat: 0,
         Kids: 0,
         Substitutions: 0,
+        Companies: 0,
         Absences: 0,
-        Chat: 0
     },
     allTot: 0 
 };

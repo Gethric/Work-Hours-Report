@@ -1,6 +1,8 @@
 $boston-green: #006D76;
 $boston-white: #FFFFFF;
 $boston-black: black;
+$boston-font-logo: Times;
+$boston-font-new: 'Open Sans';
 
 * {
     margin: 0;
@@ -9,7 +11,7 @@ $boston-black: black;
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: $boston-font-new;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
@@ -20,6 +22,7 @@ body {
 .report__title {
     display: flex;
     justify-content: center;
+    color: $boston-white;
 }
 
 .datos {
@@ -29,6 +32,7 @@ body {
 }
 
 .header {
+    font-family: $boston-font-logo;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -51,7 +55,7 @@ body {
 
 .lists thead tr {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     background-color: $boston-green;
     text-align: left;
 }
@@ -62,7 +66,7 @@ body {
 
 .item tr {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     background-color: $boston-white;
     text-align: left;
 }

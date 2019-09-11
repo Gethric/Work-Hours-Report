@@ -19,9 +19,6 @@ export const ctrlAddItem = () => {
         // 3. Add the item to the UI
         addListItem(newItem);
 
-        // Clear the fields
-        // reportView.DOMclearFields();
-
         // Calculate and update hours
         updateHours();
     }

@@ -14,7 +14,7 @@ export const getType = () => {
     } else if (getTimeSlot === 'Absences') {
         type = 'Absences';
     } else {
-        type = 'Course';
+        type = 'Courses';
     }
     return type;
 }

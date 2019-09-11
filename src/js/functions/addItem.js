@@ -4,16 +4,18 @@ import { Absence } from '../objects/absences';
 import { Substitution } from '../objects/substitutions';
 import { Companies } from '../objects/companies';
 import { Chat } from '../objects/chats';
-import { Course } from '../objects/school';
+import { Courses } from '../objects/school';
 import { KidsTeens } from '../objects/kidsTeens';
 
 export const addItem = (sched = 'dfsched', lvl = 'dflvl', teacher = 'dfteacher', hrs = 'dfhrs', comp = 'dfcomp', freq = 'dffreq', chat = 'dfchat', date = 'dfdate', kt = 'dfkt', subabtime = 'sbabdf') => {
     let type, newItem, ID;
-    type = sched;
+   
 
     // Set type to 'Courses' if it's at the school
     if (sched !== 'Absences' && sched !== 'Companies' && sched !== 'Substitutions' && sched !== 'Chat' && sched !== 'Kids') {
         type = 'Courses';
+    } else {
+        type = sched;
     }
 
     // Create new ID
@@ -40,7 +42,7 @@ export const addItem = (sched = 'dfsched', lvl = 'dflvl', teacher = 'dfteacher',
         newItem = new KidsTeens(ID, type, sched, kt, hrs);
 
     } else {
-        newItem = new Course(ID, type, sched, lvl, hrs);
+        newItem = new Courses(ID, type, sched, lvl, hrs);
     }
 
     // Push it into data stucture

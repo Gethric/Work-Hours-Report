@@ -3,6 +3,7 @@ import { menuSelect } from './menuSelect';
 import { ctrlAddItem } from './ctrlAddItem';
 import { DOMstrings } from '../objects/DOMstrings';
 import { ctrlDeleteItem } from './ctrlDeleteItem';
+import { getTotals } from './getTotals';
 
 export const setupEventListeners = () => {
 
@@ -14,11 +15,12 @@ export const setupEventListeners = () => {
 
     // Function called on clicking + or pressing enter
 
-    document.querySelector(DOM.btn).addEventListener('click', ctrlAddItem);
+    document.querySelector(DOM.btn).addEventListener('click', ctrlAddItem, getTotals);
 
     document.addEventListener('keypress', function(event) {
         if (event.keycode === 13 || event.which === 13) {
             ctrlAddItem();
+            getTotals();
         }
     });
 

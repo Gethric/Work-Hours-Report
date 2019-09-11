@@ -23,5 +23,12 @@ export const DOMstrings = {
     absencesContainer: '.absences__list',
     subsContainer: '.subs__list',
     companiesContainer: '.companies__list',
-    coursesContainer: '.courses__list'
+    coursesContainer: '.courses__list',
+    totalhrs: '.totalhrs',
+    subs_tot: '.total_sub',
+    companies_tot: '.total_cmp',
+    abs_tot: '.total_abs',
+    courses_tot:  '.total_crs',
+    period_from: '#from',
+    period_to: '#to'
 };
