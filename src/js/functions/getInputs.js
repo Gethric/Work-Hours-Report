@@ -12,7 +12,11 @@ export const getInputs = () => {
         getChatSelect: document.querySelector(DOMstrings.chatSelect).value,
         getDate: document.querySelector(DOMstrings.date).value,
         getKTSelect: document.querySelector(DOMstrings.kidsTeensSelect).value,
-        getSubAbTime: document.querySelector(DOMstrings.subAbTime).value
+        getSubAbTime: document.querySelector(DOMstrings.subAbTime).value,
+        getFirstname:document.querySelector(DOMstrings.firstname).value,
+        getLastname:document.querySelector(DOMstrings.lastname).value,
+        getPeriodFrom:document.querySelector(DOMstrings.period_from).value,
+        getPeriodTo:document.querySelector(DOMstrings.period_to).value
              
     }
 };

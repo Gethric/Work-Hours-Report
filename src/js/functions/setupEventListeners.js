@@ -4,6 +4,7 @@ import { ctrlAddItem } from './ctrlAddItem';
 import { DOMstrings } from '../objects/DOMstrings';
 import { ctrlDeleteItem } from './ctrlDeleteItem';
 import { getTotals } from './getTotals';
+import { sendReport } from './sendReport';
 
 export const setupEventListeners = () => {
 
@@ -27,4 +28,8 @@ export const setupEventListeners = () => {
     // Function called on clicking delete button
 
     document.querySelector(DOM.itemContainer).addEventListener('click', ctrlDeleteItem);
+
+    // Function called on clicking Submit button
+
+    document.querySelector(DOM.btn_submit).addEventListener('click', sendReport);
 };

@@ -14,7 +14,5 @@ export const updateHours = () => {
 
     // Display the hours in the UI
     
-    console.log(report);
-    
     displayHours(report);
 };

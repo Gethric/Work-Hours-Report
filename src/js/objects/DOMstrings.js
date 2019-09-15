@@ -19,6 +19,7 @@ export const DOMstrings = {
     chatSelect: '.chat',
     chatDiv: '#chat',
     btn: '.addBtn',
+    btn_submit: '.btnsubmit',
     itemContainer: '.report__body',
     absencesContainer: '.absences__list',
     subsContainer: '.subs__list',
@@ -30,5 +31,7 @@ export const DOMstrings = {
     abs_tot: '.total_abs',
     courses_tot:  '.total_crs',
     period_from: '#from',
-    period_to: '#to'
+    period_to: '#to',
+    firstname: '#firstname',
+    lastname: '#lastname'
 };

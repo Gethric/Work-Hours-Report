@@ -1,9 +1,20 @@
-$boston-green: #006D76;
-$boston-white: #FFFFFF;
-$boston-black: black;
-$boston-font-logo: Times;
-$boston-font-new: 'Open Sans';
 
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/home";
+
+
+
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -11,75 +22,122 @@ $boston-font-new: 'Open Sans';
 }
 
 body {
-    font-family: $boston-font-new;
+
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.7;
-    padding: 30px;
-    background-color: #006D76;
+    font-size: 16px; 
+}
+
+.page-wrapper {
+    @include bg-gra-01;
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    @include radius;
+    background-color: $boston-green;
+    padding: 2%;
 }
 
 .report__title {
+    @include font-boston-logo;
     display: flex;
     justify-content: center;
-    color: $boston-white;
+}
+
+.maestro {
+    @include font-boston-new;
+    padding: 2%;
 }
 
 .datos {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.header {
-    font-family: $boston-font-logo;
+.flex2 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100px;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($boston-green, 0.8),
-        rgba($boston-white, 0.8));
-    background-size: cover;
-    background-position: top;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .report__body {
-    background-color: $boston-white;   
+    @include radius;
+    background-color: $boston-green;
+    padding: 1%;
 }
 
 .lists {
-    width: 100%
-}
-
-.lists thead tr {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    background-color: $boston-green;
-    text-align: left;
+    width: 100%;
 }
 
 .item {
-    width: 100%
+    width: 100%;
 }
 
-.item tr {
+tr {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    background-color: $boston-white;
     text-align: left;
 }
 
-#input {
-    padding: 50px;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($boston-green, 0.8),
-        rgba($boston-white, 0.8));
+.hrstot {
+    @include radius;
+    background-color: $boston-green;
+    padding: 1%;
+}
 
+.input {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @include radius;
+    background-color: $boston-green;
+    padding: 1%;
+}
+
+.submit_form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.addBtn {
+    padding: 0 33px;
+    font-family: $boston-font-new;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.4s ease;
+    font-size: 18px;
+    border-radius: 3px;
+    background: #46a7b8;
+}
+
+.btnsubmit {
+    padding: 0 33px;
+    font-family: $boston-font-new;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.4s ease;
+    font-size: 18px;
+    border-radius: 3px;
+    background: #46a7b8;
+}
+
+.hours {
 
 }

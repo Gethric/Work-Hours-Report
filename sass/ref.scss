@@ -1,0 +1,92 @@
+
+.page-wrapper {
+    min-height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($boston-green, 0.8),
+        rgba($boston-white, 0.8));
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+body {
+    font-family: $boston-font-new;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 100px;
+   
+}
+
+.report__title {
+    display: flex;
+    justify-content: center;
+    color: $boston-white;
+}
+
+.datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header {
+    font-family: $boston-font-logo;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    background-color: $boston-green;
+    background-size: cover;
+    background-position: top;
+    border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.report__body {
+    background-color: $boston-white;   
+}
+
+.lists {
+    width: 100%;
+
+    thead {
+        
+        tr {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        background-color: $boston-green;
+        text-align: left;
+        }
+    }
+}
+
+.item {
+    width: 100%;
+    
+    tr {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        background-color: $boston-white;
+        text-align: left;
+    }
+}
+
+#input {
+    padding: 50px;
+    background-color: $boston-green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+
+.report {
+    border-radius: 3px;
+    box-shadow: 0px 8px 20px 0px;
+    
+}

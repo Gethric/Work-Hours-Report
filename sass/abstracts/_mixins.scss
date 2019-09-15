@@ -1,0 +1,33 @@
+@mixin flex-col-sb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@mixin flex-row-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin bg-gra-01 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($boston-green, 0.8),
+        rgba($boston-white, 0.8));
+}
+
+@mixin radius {
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px 0px;
+}
+
+@mixin font-boston-new {
+    font-family: $boston-font-new;
+    color: $boston-white;
+}
+
+@mixin font-boston-logo {
+    font-family: $boston-font-logo;
+    color: $boston-white;
+}
