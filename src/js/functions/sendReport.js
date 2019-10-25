@@ -8,6 +8,8 @@ export const sendReport = () => {
 
     let reportstring = JSON.stringify(report);
 
-    console.log(reportstring);
+    console.log(report);
+
+    writeUserData(report);
 
 }
